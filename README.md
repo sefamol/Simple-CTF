@@ -51,6 +51,7 @@ solo queda el cms, buscamos la versión
 ![Pasted image 20230304205329](https://user-images.githubusercontent.com/24280145/222961195-a16fdfce-d41b-4d42-80b8-fee3776bec67.png)
 
 buscamos suerte con la versión
+
 **Respuesta**: CVE-2019-9053
 
 ## Obtención de credenciales
@@ -66,7 +67,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2019-9053
 **Pregunta 5: Cual es el password?**
 *What's the password?*
 
-Buscamos en google la vulnerabilidad, hallamos un script 
+Buscamos la vulnerabilidad en google, hallamos un script 
 
 https://github.com/e-renna/CVE-2019-9053
 
