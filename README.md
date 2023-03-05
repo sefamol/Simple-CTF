@@ -5,7 +5,7 @@ Simple CTF, es un desafio de THM que se puede resolver utilizando inyección sql
 **Pregunta 1: Cuantos servicios se encuentran por debajo del puerto 1000?**
 *How many services are running under port 1000?*
 
-`nmap -sV -sC 10.10.167.117`
+`nmap -sV -sC ip_objetivo`
 
 ![Pasted image 20230304204458](https://user-images.githubusercontent.com/24280145/222960870-d75c224c-b075-46de-99d8-5a6e60dfd363.png)
 
@@ -21,7 +21,7 @@ Simple CTF, es un desafio de THM que se puede resolver utilizando inyección sql
 
 Realizamos la enumeración de las vulnerabilidades de los servicios de la web sin resultados
 
-`nmap -sV --script vuln 10.10.167.117`
+`nmap -sV --script vuln ip_objetivo`
 
 ![Pasted image 20230304204614](https://user-images.githubusercontent.com/24280145/222960917-abd13058-ec59-4430-b9ae-b8cef15ed637.png)
 
@@ -31,13 +31,13 @@ Realizamos la enumeración de las vulnerabilidades de los servicios de la web si
 
 Realizamos la enumeración de los directorios, hallando 1 directorio
 
-`gobuster dir -u http://10.10.167.117 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 15`
+`gobuster dir -u http://ip_objetivo -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 15`
 
 ![Pasted image 20230304204901](https://user-images.githubusercontent.com/24280145/222960958-fc8b2435-29dc-4a37-9b12-b7d7f004a5ff.png)
 
 Revisamos el directorio `/simple`
 
-usamos la url `http://10.10.167.117/simple` en el navegador
+usamos la url `http://ip_objetivo/simple` en el navegador
 
 ## Wappalizer
 Revisamos las tecnologias presentes en la web
@@ -73,7 +73,7 @@ https://github.com/e-renna/CVE-2019-9053
 
 fijamos la wordlist y corremos el script
 
-`python exploit.py -u http://10.10.167.117/simple --crack -w /usr/share/wordlists/SecLists/Passwords/Common-Credentials/best110.txt`
+`python exploit.py -u http://io_objetivo/simple --crack -w /usr/share/wordlists/SecLists/Passwords/Common-Credentials/best110.txt`
 
 **Nota**: *Corrí el script en vscode en entorno virtual, recibí muchos errores hasta q termino correctamente el proceso, Se debe ser paciente*
 
@@ -87,7 +87,7 @@ fijamos la wordlist y corremos el script
 
 **Respuesta**: ssh
 
-`ssh mitch@10.10.167.117 -p2222`
+`ssh mitch@ip_objetivo -p2222`
 
 **Pregunta 7: Cual es la flag del usuario**
 *What's the user flag?*
