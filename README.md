@@ -60,7 +60,7 @@ buscamos suerte con la versión
 *To what kind of vulnerability is the application vulnerable?*
 
 Buscamos en los detalles del CVE
-https://nvd.nist.gov/vuln/detail/CVE-2019-9053
+<https://nvd.nist.gov/vuln/detail/CVE-2019-9053>
 
 **Respuesta**: SQLi
 
@@ -69,7 +69,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2019-9053
 
 Buscamos la vulnerabilidad en google, hallamos un script 
 
-https://github.com/e-renna/CVE-2019-9053
+<https://github.com/e-renna/CVE-2019-9053>
 
 fijamos la wordlist y corremos el script
 
@@ -79,7 +79,8 @@ fijamos la wordlist y corremos el script
 
 ![Pasted image 20230304222502](https://user-images.githubusercontent.com/24280145/222961336-b9dc6096-2670-4ef5-b2f9-e2ad25568056.png)
 
-*Respuesta**: secret
+**Respuesta**: secret
+
 **Nota**: +Existe un error en el usuario, mitchs no permite la conexión, el usuario es mitch*
 
 **Pregunta 6: Donde puedo logear con el acceso obtenido?**
@@ -124,7 +125,7 @@ Ejecutamos el comando !sh en vim
 
 ![Pasted image 20230304232441](https://user-images.githubusercontent.com/24280145/222962404-335cfcd3-4b68-4155-bcd7-004432e3f93b.png)
 
-*Teoría sobre la ejecución en vim*: https://www.youtube.com/watch?v=X60hEP3msEQ
+*Teoría sobre la ejecución en vim*: <https://www.youtube.com/watch?v=X60hEP3msEQ>
 
 ![Pasted image 20230304232109](https://user-images.githubusercontent.com/24280145/222962449-fde215c6-7865-46ee-af66-ea080ecefd65.png)
 
